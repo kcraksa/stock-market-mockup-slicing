@@ -1,0 +1,25 @@
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Existing styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Adjust width of the drawer */
+  height: 100%;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.drawer.open {
+  right: 0;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
